@@ -21,17 +21,17 @@ public class SignupController {
     @Resource
     UserMapper userMapper;
 
-    @RequestMapping("register")
-    public String register(){
-        return "register";
-    }
-
     @RequestMapping("register-error")
     public String registerError(Model model){
         model.addAttribute("error",true);
         return "register";
     }
 
+    /**
+     * description: register interface
+     * @param:
+     * @return:
+     */
     @RequestMapping("register-save")
     public String registerSave(@RequestBody UserRegCommand userRegCommand,
                                Model model) {
