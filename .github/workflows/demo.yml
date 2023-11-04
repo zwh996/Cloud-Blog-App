@@ -1,0 +1,27 @@
+name: CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: Set up Docker
+      run: |
+        cd Blog-Cloud-Backend  # 切换到 Spring Boot 应用目录
+        docker-compose -f docker-compose.yml build
+
+    - name: Deploy using Docker Compose
+      run: |
+        cd Blog-Cloud-Backend  # 切换到 Spring Boot 应用目录
+        docker-compose -f docker-compose.yml down
+        docker-compose -f docker-compose.yml up -d
+
