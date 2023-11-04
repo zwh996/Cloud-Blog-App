@@ -8,14 +8,17 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Blog-Service" />
-        <module name="Favorite-Service" />
         <module name="Comment-Service" />
         <module name="Auth-Service" />
         <module name="Blog-Cloud-Backend" />
         <module name="Eureka-Server" />
+        <module name="Favo-Service" />
         <module name="User-Service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Favorite-Service" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
@@ -24,6 +27,7 @@
       <module name="Blog-Service" options="-parameters" />
       <module name="Comment-Service" options="-parameters" />
       <module name="Eureka-Server" options="-parameters" />
+      <module name="Favo-Service" options="-parameters" />
       <module name="Favorite-Service" options="-parameters" />
       <module name="User-Service" options="-parameters" />
     </option>

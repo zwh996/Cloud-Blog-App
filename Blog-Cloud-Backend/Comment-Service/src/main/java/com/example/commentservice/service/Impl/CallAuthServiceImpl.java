@@ -1,6 +1,6 @@
 package com.example.commentservice.service.Impl;
 
-import com.example.userservice.service.CallAuthService;
+import com.example.commentservice.service.CallAuthService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.ParameterizedTypeReference;

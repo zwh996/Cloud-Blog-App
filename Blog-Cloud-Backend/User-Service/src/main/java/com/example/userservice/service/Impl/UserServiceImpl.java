@@ -2,7 +2,7 @@ package com.example.userservice.service.Impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.example.userservice.Mapper.UserMapper;
+import com.example.userservice.mapper.UserMapper;
 import com.example.userservice.command.UserCommand;
 import com.example.userservice.command.queryCommand.UserQueryCommand;
 import com.example.userservice.entity.UserEntity;
@@ -58,6 +58,7 @@ public class UserServiceImpl implements UserService {
         log.info("query userId:{}", userId);
         UserEntity userEntity = userMapper.selectById(userId);
         UserCommand command = new UserCommand();
+        command.setUserId(userEntity.getId());
         BeanUtils.copyProperties(userEntity, command);
         log.info("query result:{}", command);
         return command;

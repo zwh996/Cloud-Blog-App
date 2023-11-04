@@ -17,7 +17,15 @@
         <option value="$PROJECT_DIR$/Eureka-Server/pom.xml" />
         <option value="$PROJECT_DIR$/CFT-Service/pom.xml" />
         <option value="$PROJECT_DIR$/Tag-Favorite-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Eureka-Server/Favorite-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Favorite-Service/pom.xml" />
+        <option value="$PROJECT_DIR$/Favo-Service/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/Favorite-Service/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SshConfigs">
+    <configs>
+      <sshConfig authType="PASSWORD" connectionConfig="{&quot;serverAliveInterval&quot;:300}" host="43.134.66.209" id="9faa36c5-4714-4182-8f62-38ca55b81389" port="22" customName="Tencent-App-server-blog" nameFormat="CUSTOM" username="ubuntu" useOpenSSHConfig="true">
+        <option name="customName" value="Tencent-App-server-blog" />
+      </sshConfig>
+    </configs>
+  </component>
+</project>

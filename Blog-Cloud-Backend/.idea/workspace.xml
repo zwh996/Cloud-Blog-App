@@ -5,111 +5,95 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Blog-Cloud.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/AuthenController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/filer/JwtAuthenticationTokenFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/util/JwtUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/command/ArticleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/command/queryCommand/QueryArticleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/controller/BlogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/entity/ArticleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/entity/ArticleTagEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/entity/MessageEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/entity/TagEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/mapper/ArticleTagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/mapper/TagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/CallAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/ArticleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/CallAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/command/CommentCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/controller/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/entity/ArticleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/entity/CommentEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/mapper/CommentMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/mapper/MessageMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/CallAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/CommentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/Impl/CallAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/Impl/CommentServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/CftServiceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/command/ArticleCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/controller/FavoriteController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/ArticleEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/ArticleTagEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/FavoriteEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/TagEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/ArticleTagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/FavoriteMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/TagMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/CallAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/FavoriteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/Impl/CallAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/Impl/FavoriteServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favorite-Service/src/test/java/com/example/tagfavoriteservice/CftServiceApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/Mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/UserCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/queryCommand/UserQueryCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/entity/UserEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/filter/AuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/CallAuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/CallAuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/UserServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth-Service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/command/LoginReturnCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/config/CorsConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog-Service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/filter/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment-Service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/filter/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Eureka-Server/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice/FavoServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice/filter/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Favo-Service/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/config/MybatisPlusConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/filter/CORSFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/AuthServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/AuthServiceApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/config/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/config/Redisconfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/AuthenController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/AuthenController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/SignupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/controller/SignupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/filer/JwtAuthenticationTokenFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/filer/JwtAuthenticationTokenFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/service/serviceImpl/LoginServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/service/serviceImpl/LoginServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/util/JwtUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/service/serviceImpl/UserDetailsServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/service/serviceImpl/UserDetailsServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/util/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/java/com/example/authservice/util/JwtUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Auth-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blog-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/BlogServicesApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/BlogServicesApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/controller/BlogController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/controller/BlogController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/ArticleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/ArticleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/CallAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/CallAuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog-Service/src/test/java/com/example/blogservices/BlogServicesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/test/java/com/example/blogservices/ArticleServicesApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comment-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/CommentServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/CommentServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/controller/CommentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/controller/CommentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/Impl/CallAuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice/service/Impl/CallAuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Comment-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/mvnw" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/mvnw.cmd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/src/main/java/com/example/searchservice/SearchServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Search-Service/src/test/java/com/example/searchservice/SearchServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka-Server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/mvnw.cmd" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/CftServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/command/ArticleCommand.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/controller/FavoriteController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/ArticleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/ArticleTagEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/FavoriteEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/TagEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/ArticleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/ArticleTagMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/FavoriteMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/TagMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/CallAuthService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/FavoriteService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/Impl/CallAuthServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/tagfavoriteservice/service/Impl/FavoriteServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favorite-Service/src/test/java/com/example/tagfavoriteservice/CftServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/src/test/java/com/example/favoservice/FavoServiceApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/Mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/mapper/UserMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/UserServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/UserServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/UserCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/UserCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/queryCommand/UserQueryCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/command/queryCommand/UserQueryCommand.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/filter/AuthFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -120,8 +104,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -150,47 +134,54 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "1.8",
-    "last_opened_file_path": "/Users/zwh/gitRepository/Blog-Cloud/Blog-Cloud-Backend/Tag-Favorite-Service/src/main/java/com/example/tagfavoriteservice",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "editing.templates",
-    "spring.configuration.checksum": "61283984185c7ce61a667a53ae66f79d",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/zwh/gitRepository/Blog-Cloud/Blog-Cloud-Backend/User-Service/src/main/java/com/example/userservice&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;a572ad1a6773fbc05284aa55f37b7e8a&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Tag-Favorite-Service/src/main/java/com/example/tagfavoriteservice" />
-      <recent name="$PROJECT_DIR$/CFT-Service/src/main/java/com/example/cftservice" />
+      <recent name="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice" />
+      <recent name="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice" />
       <recent name="$PROJECT_DIR$/Comment-Service/src/main/java/com/example/commentservice" />
+      <recent name="$PROJECT_DIR$/User-Service" />
+      <recent name="$PROJECT_DIR$/Favo-Service" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice" />
+      <recent name="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/favoriteservice" />
+      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.tagfavoriteservice.entity" />
-      <recent name="com.example.tagfavoriteservice.mapper" />
-      <recent name="com.example.cftservice.service.Impl" />
-      <recent name="com.example.cftservice.service" />
-      <recent name="com.example.commentservice.mapper" />
+      <recent name="com.example.userservice.config" />
+      <recent name="com.example.favoservice.config" />
+      <recent name="com.example.commentservice.config" />
+      <recent name="com.example.userservice.filter" />
+      <recent name="com.example.favoservice.filter" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -200,7 +191,11 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.UserServiceApplication">
+  <component name="RunManager" selected="Spring Boot.FavoServiceApplication">
+    <configuration name="Blog-Service-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
+      <option name="JAR_PATH" value="$PROJECT_DIR$/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar" />
+      <method v="2" />
+    </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Auth-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.authservice.AuthServiceApplication" />
@@ -211,13 +206,6 @@
     <configuration name="BlogServicesApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Blog-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.blogservices.BlogServicesApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CftServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="Favorite-Service" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.tagfavoriteservice.CftServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -236,6 +224,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="FavoServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Favo-Service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.favoservice.FavoServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="User-Service" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.userservice.UserServiceApplication" />
@@ -243,6 +238,59 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Auth-Service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Auth-Service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Blog-Service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Blog-Service/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="Eureka-Server/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="Eureka-Server/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="dockerfile" temporary="true">
+      <deployment type="dockerfile">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JAR Application.Blog-Service-0.0.1-SNAPSHOT.jar" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+        <item itemvalue="Docker.Auth-Service/Dockerfile" />
+        <item itemvalue="Docker.Blog-Service/Dockerfile" />
+        <item itemvalue="Docker.Eureka-Server/Dockerfile" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -260,15 +308,59 @@
       <workItem from="1697425262112" duration="47195000" />
       <workItem from="1697682135044" duration="7990000" />
       <workItem from="1697721458416" duration="38766000" />
-      <workItem from="1698050260138" duration="51837000" />
+      <workItem from="1698050260138" duration="64240000" />
+      <workItem from="1698377180623" duration="15946000" />
+      <workItem from="1698495250512" duration="1902000" />
+      <workItem from="1698497160755" duration="24536000" />
+      <workItem from="1698561180764" duration="5848000" />
+      <workItem from="1698571993954" duration="2282000" />
+      <workItem from="1698593068788" duration="597000" />
+      <workItem from="1698595465270" duration="1386000" />
+      <workItem from="1698597110076" duration="74551000" />
+      <workItem from="1698989582343" duration="6287000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.springframework.security:spring-security-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-core" />
+    <option featureType="dependencySupport" implementationName="java:jakarta.validation:jakarta.validation-api" />
+    <option featureType="dependencySupport" implementationName="java:io.projectreactor:reactor-core" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-core" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.data:spring-data-commons" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.cloud:spring-cloud-context" />
+    <option featureType="dependencySupport" implementationName="java:org.hibernate.validator:hibernate-validator" />
+    <option featureType="dependencySupport" implementationName="java:com.amazonaws:aws-java-sdk-s3" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework.boot:spring-boot" />
+    <option featureType="dependencySupport" implementationName="java:org.springframework:spring-webmvc" />
+    <option featureType="dependencySupport" implementationName="java:org.projectlombok:lombok" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.web.client.HttpClientErrorException$Forbidden" package="org.springframework.web.client" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

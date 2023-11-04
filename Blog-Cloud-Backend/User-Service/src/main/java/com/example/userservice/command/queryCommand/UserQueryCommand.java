@@ -10,8 +10,6 @@ import lombok.NoArgsConstructor;
 public class UserQueryCommand {
     Integer userId;
 
-    String permit;
-
     Integer pageNum;
 
     Integer pageSize;

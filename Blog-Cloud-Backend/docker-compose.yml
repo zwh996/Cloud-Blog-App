@@ -1,0 +1,77 @@
+version: '3'
+networks:
+  my-network:
+    driver: bridge
+
+services:
+  auth-service:
+    container_name: auth-service-container
+    build:
+      context: ./Auth-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    networks:
+      - my-network
+    depends_on:
+      - eureka-server
+
+  comment-service:
+    container_name: comment-service-container
+    build:
+      context: ./Comment-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8083:8083"
+    networks:
+      - my-network
+    depends_on:
+      - eureka-server
+
+  blog-service:
+    container_name: blog-service-container
+    build:
+      context: ./Blog-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    networks:
+      - my-network
+    depends_on:
+      - eureka-server
+
+  favo-service:
+    container_name: favo-service-container
+    build:
+      context: ./Favo-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8084:8084"
+    networks:
+      - my-network
+    depends_on:
+      - eureka-server
+
+  eureka-server:
+    container_name: eureka-server-container
+    build:
+      context: ./Eureka-Server
+      dockerfile: Dockerfile
+    ports:
+      - "8761:8761"
+    networks:
+      - my-network
+
+  user-service:
+    container_name: user-service-container
+    build:
+      context: ./User-Service
+      dockerfile: Dockerfile
+    ports:
+      - "8082:8082"
+    networks:
+      - my-network
+    depends_on:
+      - eureka-server
+
+

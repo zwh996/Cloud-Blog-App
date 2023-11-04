@@ -7,6 +7,8 @@ import org.springframework.http.ResponseEntity;
 
 public interface ArticleService {
     public ResponseEntity getArticleById(int id);
+    public ResponseEntity getArticleByUserId(int userId, int pageNum);
+
     public ResponseEntity getArticleByName(String name,int pageNum);
     public ResponseEntity getArticleBySum(String sum, int pageNum);
     public ResponseEntity createArticle(ArticleCommand articleCommand);

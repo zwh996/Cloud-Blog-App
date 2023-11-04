@@ -8,7 +8,7 @@ import java.util.Date;
 public class UserCommand {
     private Integer userId;
 
-    private String userName;
+    private String username;
 
     private String userNickname;
 

@@ -16,6 +16,7 @@ import java.util.Objects;
 @RestController
 @RequestMapping("/api/user")
 @Slf4j
+@CrossOrigin(origins = "*")
 public class UserController {
 
 

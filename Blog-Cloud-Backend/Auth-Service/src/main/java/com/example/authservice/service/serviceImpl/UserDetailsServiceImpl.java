@@ -32,5 +32,6 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         // 创建UserDetails对象并返回，通常使用User实体类的属性填充
         return new LoginUser(user);
     }
+
 }
 

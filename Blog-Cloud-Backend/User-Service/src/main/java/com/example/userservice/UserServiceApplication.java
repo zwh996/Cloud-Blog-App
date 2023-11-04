@@ -12,7 +12,7 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @MapperScan("com.example.userservice.mapper")
-@ComponentScan(basePackages = {"com.example.userservice.service","com.example.userservice.controller"})
+@ComponentScan(basePackages = {"com.example.userservice.service","com.example.userservice.controller","com.example.userservice.filter"})
 public class UserServiceApplication {
 
     @Bean

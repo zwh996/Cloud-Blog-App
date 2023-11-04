@@ -56,11 +56,27 @@ public class ArticleServiceImpl implements ArticleService {
         return new ResponseEntity(articleCommand, HttpStatus.OK);
     }
 
+    @Override
+    public ResponseEntity getArticleByUserId(int userId, int pageNum) {
+        log.info("name:{}", userId);
+        Page<ArticleEntity> page = new Page<>(pageNum, 6);
+        QueryWrapper<ArticleEntity> queryWrapper = new QueryWrapper<>();
+        queryWrapper.like("user_id", userId).eq("article_status", 1);
+        IPage<ArticleEntity> ipage = articleMapper.selectPage(page, queryWrapper);
+        List<ArticleEntity> entityList = ipage.getRecords();
+        List<ArticleCommand> listResult = new ArrayList<>();
+        for (ArticleEntity tmp : entityList) {
+            listResult.add(articleToCommand(tmp));
+        }
+        return new ResponseEntity(listResult, HttpStatus.OK);
+    }
+
     @Transactional
     public ArticleCommand articleToCommand(ArticleEntity article) {
         ArticleCommand articleCommand = new ArticleCommand();
         //inject attributes
         BeanUtils.copyProperties(article, articleCommand);
+        articleCommand.setArticleId(article.getId());
         //get user profile
         UserEntity user = userMapper.selectById(article.getUserId());
         articleCommand.setUserNickname(user.getUserNickname());
@@ -79,11 +95,13 @@ public class ArticleServiceImpl implements ArticleService {
 
     @Override
     public ResponseEntity getArticleByName(String name, int pageNum) {
-        log.info("name:{}",name);
+        log.info("name:{}", name);
         Page<ArticleEntity> page = new Page<>(pageNum, 6);
         QueryWrapper<ArticleEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like("article_title", name).eq("article_status",1);
-        IPage<ArticleEntity> ipage= articleMapper.selectPage(page, queryWrapper);
+        if(!name.equals(" ")){
+            queryWrapper.like("article_title", name).eq("article_status", 1);
+        }
+        IPage<ArticleEntity> ipage = articleMapper.selectPage(page, queryWrapper);
         List<ArticleEntity> entityList = ipage.getRecords();
         List<ArticleCommand> listResult = new ArrayList<>();
         for (ArticleEntity tmp : entityList) {
@@ -96,8 +114,8 @@ public class ArticleServiceImpl implements ArticleService {
     public ResponseEntity getArticleBySum(String sum, int pageNum) {
         Page<ArticleEntity> page = new Page<>(pageNum, 6);
         QueryWrapper<ArticleEntity> queryWrapper = new QueryWrapper<>();
-        queryWrapper.like("article_summary", sum).eq("article_status",1);
-        IPage<ArticleEntity> ipage= articleMapper.selectPage(page, queryWrapper);
+        queryWrapper.like("article_summary", sum).eq("article_status", 1);
+        IPage<ArticleEntity> ipage = articleMapper.selectPage(page, queryWrapper);
         List<ArticleEntity> entityList = ipage.getRecords();
         List<ArticleCommand> listResult = new ArrayList<>();
         for (ArticleEntity tmp : entityList) {
@@ -124,7 +142,14 @@ public class ArticleServiceImpl implements ArticleService {
             articleTag.setArticleId(article.getId());
             QueryWrapper<TagEntity> wrapper = new QueryWrapper<>();
             wrapper.eq("tag_Name", tagName);
-            articleTag.setTagId(tagMapper.selectOne(wrapper).getId());
+            TagEntity tag = tagMapper.selectOne(wrapper);
+            if(Objects.isNull(tag)){
+                tag = new TagEntity();
+                tag.setTagName(tagName);
+                tagMapper.insert(tag);
+                tag = tagMapper.selectOne(wrapper);
+            }
+            articleTag.setTagId(tag.getId());
             articleTagMapper.insert(articleTag);
         }
         ResponseEntity<Integer> responseEntity = new ResponseEntity(ret, HttpStatus.OK);
@@ -150,7 +175,7 @@ public class ArticleServiceImpl implements ArticleService {
     @Transactional
     public ResponseEntity updateArticle(ArticleCommand articleCommand) {
         ArticleEntity article = articleMapper.selectById(articleCommand.getArticleId());
-        BeanUtils.copyProperties(articleCommand,article);
+        BeanUtils.copyProperties(articleCommand, article);
         article.setArticleStatus(0);
         articleMapper.updateById(article);
         //delete origin tags
@@ -162,10 +187,15 @@ public class ArticleServiceImpl implements ArticleService {
             ArticleTagEntity articleTag = new ArticleTagEntity();
             articleTag.setArticleId(article.getId());
             QueryWrapper<TagEntity> queryWrapper = new QueryWrapper<>();
-            queryWrapper.eq("tag_name", tagName);
+            wrapper.eq("tag_Name", tagName);
             TagEntity tag = tagMapper.selectOne(queryWrapper);
-            int tagId = tag.getId();
-            articleTag.setTagId(tagId);
+            if(Objects.isNull(tag)){
+                tag = new TagEntity();
+                tag.setTagName(tagName);
+                tagMapper.insert(tag);
+                tag = tagMapper.selectOne(queryWrapper);
+            }
+            articleTag.setTagId(tag.getId());
             articleTagMapper.insert(articleTag);
         }
         return new ResponseEntity(HttpStatus.OK);

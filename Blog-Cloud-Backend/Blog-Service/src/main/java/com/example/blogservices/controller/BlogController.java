@@ -14,6 +14,7 @@ import org.springframework.web.client.RestTemplate;
 @RestController
 @RequestMapping(("/api/blog"))
 @Slf4j
+@CrossOrigin(origins = "*")
 public class BlogController {
 
     @Autowired
@@ -29,6 +30,12 @@ public class BlogController {
     public ResponseEntity getBlogById(@PathVariable int id) {
         log.info("queryId = {}", id);
         return articleService.getArticleById(id);
+    }
+
+    @GetMapping("/get-article-by-userId/{id}/{pageNum}")
+    public ResponseEntity getBlogByUserId(@PathVariable int id,@PathVariable int pageNum) {
+        log.info("queryId = {}", id);
+        return articleService.getArticleByUserId(id,pageNum);
     }
 
     @GetMapping("/get-article-by-title/{title}/{pageNum}")

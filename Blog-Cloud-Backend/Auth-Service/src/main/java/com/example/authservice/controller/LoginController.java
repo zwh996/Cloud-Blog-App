@@ -24,9 +24,11 @@ public class LoginController {
      * @param: command(including username and pwd)
      * @return: map
      */
-    @PostMapping("/login")
+    @PostMapping(value="/login")
     public ResponseEntity login(@RequestBody UserLogCommand command) {
-        return loginService.login(command);
+        log.info(command.toString());
+        ResponseEntity responseEntity = loginService.login(command);
+        return responseEntity;
     }
 
     @RequestMapping("/login-error")
