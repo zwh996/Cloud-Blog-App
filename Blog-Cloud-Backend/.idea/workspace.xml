@@ -5,12 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Auth-Service/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Blog-Service/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Comment-Service/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Eureka-Server/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Favo-Service/Jenkinsfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/User-Service/Jenkinsfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -236,7 +230,7 @@
       <workItem from="1698593068788" duration="597000" />
       <workItem from="1698595465270" duration="1386000" />
       <workItem from="1698597110076" duration="74551000" />
-      <workItem from="1698989582343" duration="7819000" />
+      <workItem from="1698989582343" duration="9203000" />
     </task>
     <servers />
   </component>
