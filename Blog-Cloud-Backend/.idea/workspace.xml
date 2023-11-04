@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -84,10 +82,10 @@
       <recent name="$PROJECT_DIR$/Blog-Service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/Auth-Service" />
       <recent name="$PROJECT_DIR$/Favo-Service/src/main/java/com/example/favoservice" />
       <recent name="$PROJECT_DIR$/Favorite-Service/src/main/java/com/example/favoriteservice" />
-      <recent name="$PROJECT_DIR$" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.example.userservice.config" />
@@ -230,7 +228,7 @@
       <workItem from="1698593068788" duration="597000" />
       <workItem from="1698595465270" duration="1386000" />
       <workItem from="1698597110076" duration="74551000" />
-      <workItem from="1698989582343" duration="9203000" />
+      <workItem from="1698989582343" duration="10014000" />
     </task>
     <servers />
   </component>
