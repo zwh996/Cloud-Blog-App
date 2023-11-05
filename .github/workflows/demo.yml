@@ -25,7 +25,7 @@ jobs:
         
     - name: mvn package
       run: |
-        cd Eureka-Serve
+        cd Eureka-Server
         mvn package
         cd ..
         
