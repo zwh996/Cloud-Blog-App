@@ -45,12 +45,12 @@ jobs:
         
     - name: run eureka
       run: |
-        nohup java -jar Blog-Cloud-Backend/Eureka-Server/target/Eureka-Server-0.0.1-SNAPSHOT.jar
+        nohup java -jar Blog-Cloud-Backend/Eureka-Server/target/Eureka-Server-0.0.1-SNAPSHOT.jar > eureka.log 2>&1 &
         
     - name: run services
       run: |
-        nohup java -jar Blog-Cloud-Backend/Auth-Service/target/Auth-Service-0.0.1-SNAPSHOT.jar
-        nohup java -jar Blog-Cloud-Backend/Comment-Service/target/Comment-Service-0.0.1-SNAPSHOT.jar
-        nohup java -jar Blog-Cloud-Backend/Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar
-        nohup java -jar Blog-Cloud-Backend/User-Service/target/User-Service-0.0.1-SNAPSHOT.jar
-        nohup java -jar Blog-Cloud-Backend/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar
+        nohup java -jar Blog-Cloud-Backend/Auth-Service/target/Auth-Service-0.0.1-SNAPSHOT.jar > Auth.log 2>&1 &
+        nohup java -jar Blog-Cloud-Backend/Comment-Service/target/Comment-Service-0.0.1-SNAPSHOT.jar > Comment.log 2>&1 &
+        nohup java -jar Blog-Cloud-Backend/Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar > Favo.log 2>&1 &
+        nohup java -jar Blog-Cloud-Backend/User-Service/target/User-Service-0.0.1-SNAPSHOT.jar > User.log 2>&1 &
+        nohup java -jar Blog-Cloud-Backend/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar > Blog.log 2>&1 &
