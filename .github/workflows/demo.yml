@@ -17,16 +17,9 @@ jobs:
         distribution: 'temurin'
         cache: maven
 
-    - name: List directory contents
-      run: |
-        cd Blog-Cloud-Backend/Eureka-Server
-        directory_contents=$(ls)
-        echo "$directory_contents"
-        cd ..
-        
     - name: mvn package
       run: |
-        cd Eureka-Server
+        cd Blog-Cloud-Backend/Eureka-Server
         mvn package
         cd ..
         
