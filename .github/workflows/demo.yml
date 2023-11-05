@@ -45,12 +45,12 @@ jobs:
         
     - name: run eureka
       run: |
-        java -jar Eureka-Server/target/Eureka-Server-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/Eureka-Server/target/Eureka-Server-0.0.1-SNAPSHOT.jar
         
     - name: run services
       run: |
-        java -jar Auth-Service/target/Auth-Service-0.0.1-SNAPSHOT.jar
-        java -jar Comment-Service/target/Comment-Service-0.0.1-SNAPSHOT.jar
-        java -jar Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar
-        java -jar User-Service/target/User-Service-0.0.1-SNAPSHOT.jar
-        java -jar Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/Auth-Service/target/Auth-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/Comment-Service/target/Comment-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/User-Service/target/User-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Cloud-Backend/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar
