@@ -14,11 +14,6 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Docker
-      run: |
-        cd Blog-Cloud-Backend  # 切换到 Spring Boot 应用目录
-        docker-compose -f docker-compose.yml build
-
     - name: Deploy using Docker Compose
       run: |
         cd Blog-Cloud-Backend  # 切换到 Spring Boot 应用目录
