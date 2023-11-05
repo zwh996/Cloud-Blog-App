@@ -1,22 +1,62 @@
-name: CI/CD Pipeline
+name: CICD
 
-on:
-  push:
-    branches:
-      - main
-  workflow_dispatch:
+on: workflow_dispatch
 
 jobs:
   build:
+
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+    - uses: actions/checkout@v3
+    
+    - name: Set up JDK 8
+      uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'temurin'
+        cache: maven
 
-    - name: Deploy using Docker Compose
+    - name: List directory contents
       run: |
-        cd Blog-Cloud-Backend  # 切换到 Spring Boot 应用目录
-        docker-compose -f docker-compose.yml down
-        docker-compose -f docker-compose.yml up -d
-
+        cd Blog-Cloud-Backend/Eureka-Server
+        directory_contents=$(ls)
+        echo "$directory_contents"
+        
+    - name: mvn package
+      run: |
+        cd Eureka-Serve
+        mvn package
+        cd ..
+        
+        cd Auth-Service
+        mvn package
+        cd ..
+        
+        cd Comment-Service
+        mvn package
+        cd ..
+        
+        cd Favo-Service
+        mvn package
+        cd ..
+        
+        cd User-Service
+        mvn package
+        cd ..
+        
+        cd Blog-Service
+        mvn package
+        cd ..
+        
+    - name: run eureka
+      run: |
+        java -jar Eureka-Server/target/Eureka-Server-0.0.1-SNAPSHOT.jar
+        
+    - name: run services
+      run: |
+        java -jar Auth-Service/target/Auth-Service-0.0.1-SNAPSHOT.jar
+        java -jar Comment-Service/target/Comment-Service-0.0.1-SNAPSHOT.jar
+        java -jar Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar
+        java -jar User-Service/target/User-Service-0.0.1-SNAPSHOT.jar
+        java -jar Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar
