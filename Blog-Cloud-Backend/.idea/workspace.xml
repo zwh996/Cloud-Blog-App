@@ -6,12 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth-Service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Blog-Service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comment-Service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eureka-Server/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Eureka-Server/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Favo-Service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/User-Service/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/Dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +231,7 @@
       <workItem from="1698595465270" duration="1386000" />
       <workItem from="1698597110076" duration="74551000" />
       <workItem from="1698989582343" duration="11702000" />
-      <workItem from="1699107906123" duration="5057000" />
+      <workItem from="1699107906123" duration="14223000" />
     </task>
     <servers />
   </component>
