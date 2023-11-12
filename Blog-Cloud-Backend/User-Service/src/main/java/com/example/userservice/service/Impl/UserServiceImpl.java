@@ -59,6 +59,7 @@ public class UserServiceImpl implements UserService {
         UserEntity userEntity = userMapper.selectById(userId);
         UserCommand command = new UserCommand();
         command.setUserId(userEntity.getId());
+        command.setUsername(userEntity.getUserName());
         BeanUtils.copyProperties(userEntity, command);
         log.info("query result:{}", command);
         return command;
@@ -97,6 +98,7 @@ public class UserServiceImpl implements UserService {
         for (UserEntity tmp : listEntity) {
             UserCommand tmpCommand = new UserCommand();
             BeanUtils.copyProperties(tmp, tmpCommand);
+            tmpCommand.setUserId(tmp.getId());
             listResult.add(tmpCommand);
         }
         return listResult;

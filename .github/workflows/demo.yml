@@ -54,3 +54,38 @@ jobs:
         nohup java -jar Blog-Cloud-Backend/Favo-Service/target/Favo-Service-0.0.1-SNAPSHOT.jar > Favo.log 2>&1 &
         nohup java -jar Blog-Cloud-Backend/User-Service/target/User-Service-0.0.1-SNAPSHOT.jar > User.log 2>&1 &
         nohup java -jar Blog-Cloud-Backend/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar > Blog.log 2>&1 &
+  test:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Set up JDK 8
+      uses: actions/setup-java@v3
+      with:
+        java-version: '8'
+        distribution: 'temurin'
+        cache: maven
+
+    - name: run tests
+      run: |
+        cd Blog-Cloud-Backend/Auth-Service
+        mvn test
+        cd ..
+        
+        cd Comment-Service
+        mvn test
+        cd ..
+        
+        cd Favo-Service
+        mvn test
+        cd ..
+        
+        cd User-Service
+        mvn test
+        cd ..
+        
+        cd Blog-Service
+        mvn test
+        cd ..

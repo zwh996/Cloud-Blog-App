@@ -98,7 +98,7 @@ public class ArticleServiceImpl implements ArticleService {
         log.info("name:{}", name);
         Page<ArticleEntity> page = new Page<>(pageNum, 6);
         QueryWrapper<ArticleEntity> queryWrapper = new QueryWrapper<>();
-        if(!name.equals(" ")){
+        if (!name.equals(" ")) {
             queryWrapper.like("article_title", name).eq("article_status", 1);
         }
         IPage<ArticleEntity> ipage = articleMapper.selectPage(page, queryWrapper);
@@ -143,7 +143,7 @@ public class ArticleServiceImpl implements ArticleService {
             QueryWrapper<TagEntity> wrapper = new QueryWrapper<>();
             wrapper.eq("tag_Name", tagName);
             TagEntity tag = tagMapper.selectOne(wrapper);
-            if(Objects.isNull(tag)){
+            if (Objects.isNull(tag)) {
                 tag = new TagEntity();
                 tag.setTagName(tagName);
                 tagMapper.insert(tag);
@@ -183,20 +183,22 @@ public class ArticleServiceImpl implements ArticleService {
         wrapper.eq("article_id", articleCommand.getArticleId());
         articleTagMapper.delete(wrapper);
         //add tmp tags
-        for (String tagName : articleCommand.getTags()) {
-            ArticleTagEntity articleTag = new ArticleTagEntity();
-            articleTag.setArticleId(article.getId());
-            QueryWrapper<TagEntity> queryWrapper = new QueryWrapper<>();
-            wrapper.eq("tag_Name", tagName);
-            TagEntity tag = tagMapper.selectOne(queryWrapper);
-            if(Objects.isNull(tag)){
-                tag = new TagEntity();
-                tag.setTagName(tagName);
-                tagMapper.insert(tag);
-                tag = tagMapper.selectOne(queryWrapper);
+        if (articleCommand.getTags() != null && articleCommand.getTags().size() != 0) {
+            for (String tagName : articleCommand.getTags()) {
+                ArticleTagEntity articleTag = new ArticleTagEntity();
+                articleTag.setArticleId(article.getId());
+                QueryWrapper<TagEntity> queryWrapper = new QueryWrapper<>();
+                wrapper.eq("tag_Name", tagName);
+                TagEntity tag = tagMapper.selectOne(queryWrapper);
+                if (Objects.isNull(tag)) {
+                    tag = new TagEntity();
+                    tag.setTagName(tagName);
+                    tagMapper.insert(tag);
+                    tag = tagMapper.selectOne(queryWrapper);
+                }
+                articleTag.setTagId(tag.getId());
+                articleTagMapper.insert(articleTag);
             }
-            articleTag.setTagId(tag.getId());
-            articleTagMapper.insert(articleTag);
         }
         return new ResponseEntity(HttpStatus.OK);
     }

@@ -6,6 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="553cd68a-5e12-4752-ba21-0129df85f93d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Auth-Service/src/test/java/com/example/authservice/AuthServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Auth-Service/src/test/java/com/example/authservice/AuthServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/ArticleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/main/java/com/example/blogservices/service/serviceImpl/ArticleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Blog-Service/src/test/java/com/example/blogservices/ArticleServicesApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Blog-Service/src/test/java/com/example/blogservices/ArticleServicesApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comment-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comment-Service/src/test/java/com/example/commentservice/CommentServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Comment-Service/src/test/java/com/example/commentservice/CommentServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favo-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Favo-Service/src/test/java/com/example/favoservice/FavoServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Favo-Service/src/test/java/com/example/favoservice/FavoServiceApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/main/java/com/example/userservice/service/Impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/User-Service/src/test/java/com/example/userservice/UserServiceApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/User-Service/src/test/java/com/example/userservice/UserServiceApplicationTests.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,10 +116,84 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.FavoServiceApplication">
-    <configuration name="Blog-Service-0.0.1-SNAPSHOT.jar" type="JarApplication" temporary="true">
-      <option name="JAR_PATH" value="$PROJECT_DIR$/Blog-Service/target/Blog-Service-0.0.1-SNAPSHOT.jar" />
-      <method v="2" />
+  <component name="RunManager" selected="JUnit.UserServiceApplicationTests">
+    <configuration name="CommentServiceApplicationTests.addCommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Comment-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.commentservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.commentservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.commentservice.CommentServiceApplicationTests" />
+      <option name="METHOD_NAME" value="addCommentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CommentServiceApplicationTests.removeCommentTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Comment-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.commentservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.commentservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.commentservice.CommentServiceApplicationTests" />
+      <option name="METHOD_NAME" value="removeCommentTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FavoServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Favo-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.favoservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.favoservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.favoservice.FavoServiceApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FavoServiceApplicationTests.cancleTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Favo-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.favoservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.favoservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.favoservice.FavoServiceApplicationTests" />
+      <option name="METHOD_NAME" value="cancleTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="User-Service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.userservice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.userservice" />
+      <option name="MAIN_CLASS_NAME" value="com.example.userservice.UserServiceApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="AuthServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="Auth-Service" />
@@ -151,30 +237,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Auth-Service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Auth-Service/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Blog-Service/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Blog-Service/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
-    <configuration name="Eureka-Server/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="sourceFilePath" value="Eureka-Server/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
       <deployment type="docker-compose.yml">
         <settings />
@@ -187,21 +249,13 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JAR Application.Blog-Service-0.0.1-SNAPSHOT.jar" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
-        <item itemvalue="Docker.Auth-Service/Dockerfile" />
-        <item itemvalue="Docker.Blog-Service/Dockerfile" />
-        <item itemvalue="Docker.Eureka-Server/Dockerfile" />
+        <item itemvalue="JUnit.UserServiceApplicationTests" />
+        <item itemvalue="JUnit.FavoServiceApplicationTests" />
+        <item itemvalue="JUnit.FavoServiceApplicationTests.cancleTest" />
+        <item itemvalue="JUnit.CommentServiceApplicationTests.removeCommentTest" />
+        <item itemvalue="JUnit.CommentServiceApplicationTests.addCommentTest" />
       </list>
     </recent_temporary>
   </component>
@@ -231,7 +285,10 @@
       <workItem from="1698595465270" duration="1386000" />
       <workItem from="1698597110076" duration="74551000" />
       <workItem from="1698989582343" duration="11702000" />
-      <workItem from="1699107906123" duration="14223000" />
+      <workItem from="1699107906123" duration="17901000" />
+      <workItem from="1699197068901" duration="74000" />
+      <workItem from="1699197213526" duration="16039000" />
+      <workItem from="1699722773769" duration="1271000" />
     </task>
     <servers />
   </component>
